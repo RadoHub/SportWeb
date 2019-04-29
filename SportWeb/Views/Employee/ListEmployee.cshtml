@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "ListEmployee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ListEmployee</h1>
+
+@foreach(var emp in Model)
+{
+    <h1>@emp.EmployeeName</h1> <br /> <h2>@emp.EmployeeSurname</h2>
+}
